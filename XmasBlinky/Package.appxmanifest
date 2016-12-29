@@ -4,7 +4,7 @@
   <mp:PhoneIdentity PhoneProductId="52fb1f2f-cb3a-4397-ae66-aa7e3808c2f1" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>XmasBlinky</DisplayName>
-    <PublisherDisplayName>timmi</PublisherDisplayName>
+    <PublisherDisplayName>thered121</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
