@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Windows.Devices.Adc.Provider;
 
-namespace Microsoft.IoT.AdcMcp3008
+namespace XmasBlinky.IoT.AdcMcp3008
 {
     public sealed class AdcMcp3008Provider : IAdcProvider
     {

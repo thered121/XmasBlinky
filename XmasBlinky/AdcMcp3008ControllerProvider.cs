@@ -5,7 +5,7 @@ using Windows.Devices.Adc.Provider;
 using Windows.Devices.Enumeration;
 using Windows.Devices.Spi;
 
-namespace Microsoft.IoT.AdcMcp3008
+namespace XmasBlinky.IoT.AdcMcp3008
 {
     public sealed class AdcMcp3008ControllerProvider : IAdcControllerProvider
     {
