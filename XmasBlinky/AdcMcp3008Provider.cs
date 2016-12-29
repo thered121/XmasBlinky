@@ -16,7 +16,6 @@ namespace XmasBlinky.IoT.AdcMcp3008
             return providerSingleton;
 
         }
-
         public IReadOnlyList<IAdcControllerProvider> GetControllers()
         {
             AdcMcp3008ControllerProvider provider = new AdcMcp3008ControllerProvider(AdcMcp3008ControllerProvider.DefaultChipSelectLine);
