@@ -13,6 +13,7 @@ Global
 		Release|ARM = Release|ARM
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
+		Description = Update to Blinky for the holidays
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{75696CC0-2DEB-4053-88CF-267A2808B80C}.Debug|ARM.ActiveCfg = Debug|ARM
