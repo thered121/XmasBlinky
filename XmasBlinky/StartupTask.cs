@@ -69,7 +69,7 @@ namespace XmasBlinky
 
             mEngine.MediaStateChanged += MEngine_MediaStateChanged;
             mEngine.Volume = 0.01;
-            mEngine.Play("ms-appx:///Assets/song.mp3");
+            mEngine.Play("ms-appx:///song.mp3");
         }
         private void MEngine_MediaStateChanged(MediaState state)
         {

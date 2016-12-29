@@ -16,7 +16,6 @@ namespace XmasBlinky.IoT.AdcMcp3008
         const int MCP3008_ResolutionInBits = 10;
         const int MCP3008_MinValue = 0;
         const int MCP3008_MaxValue = 1023;
-
         // ADC chip operation constants
         const byte MCP3008_SingleEnded = 0x08;
 
