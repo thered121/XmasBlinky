@@ -5,7 +5,7 @@ using Windows.Devices.Adc.Provider;
 using Windows.Devices.Enumeration;
 using Windows.Devices.Spi;
 
-namespace XmasBlinky.IoT.AdcMcp3008
+namespace Microsoft.IoT.AdcMcp3008
 {
     public sealed class AdcMcp3008ControllerProvider : IAdcControllerProvider
     {
@@ -16,6 +16,7 @@ namespace XmasBlinky.IoT.AdcMcp3008
         const int MCP3008_ResolutionInBits = 10;
         const int MCP3008_MinValue = 0;
         const int MCP3008_MaxValue = 1023;
+
         // ADC chip operation constants
         const byte MCP3008_SingleEnded = 0x08;
 
