@@ -138,7 +138,7 @@
     </SDKReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\ReposUniversalMediaEngine\UniversalMediaEngine-3c61e9ac3277038bffae963aaced763f0ef6a3a8\UniversalMediaEngine\UniversalMediaEngine.vcxproj">
+    <ProjectReference Include="..\UniversalMediaEngine\UniversalMediaEngine.vcxproj">
       <Project>{81d46002-ec95-4423-bf6e-dbe82ccd55ca}</Project>
       <Name>UniversalMediaEngine</Name>
     </ProjectReference>
