@@ -137,12 +137,6 @@
       <Name>Windows IoT Extensions for the UWP</Name>
     </SDKReference>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\UniversalMediaEngine\UniversalMediaEngine.vcxproj">
-      <Project>{81d46002-ec95-4423-bf6e-dbe82ccd55ca}</Project>
-      <Name>UniversalMediaEngine</Name>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
