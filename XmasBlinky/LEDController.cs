@@ -22,7 +22,7 @@ namespace XmasBlinky
             await InitGPIO();
             if (rpin != null && gpin != null)
             {
-                timer = new Timer(Timer_Tick, this, 0, 700);
+                
             }
             else
             {
@@ -30,6 +30,16 @@ namespace XmasBlinky
             }
         }
 
+        public void StartLights()
+        {
+            timer = new Timer(Timer_Tick, this, 0, 700);
+        }
+
+        public void StopLights()
+        {
+            timer.Dispose();
+
+        }
         private async Task InitGPIO()
         {
             var gpio = GpioController.GetDefault();
