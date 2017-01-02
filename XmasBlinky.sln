@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmasBlinky", "XmasBlinky\XmasBlinky.csproj", "{75696CC0-2DEB-4053-88CF-267A2808B80C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{81D46002-EC95-4423-BF6E-DBE82CCD55CA} = {81D46002-EC95-4423-BF6E-DBE82CCD55CA}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UniversalMediaEngine", "UniversalMediaEngine\UniversalMediaEngine.vcxproj", "{81D46002-EC95-4423-BF6E-DBE82CCD55CA}"
 EndProject

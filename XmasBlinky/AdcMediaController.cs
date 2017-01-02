@@ -116,17 +116,14 @@ namespace XmasBlinky
             eState newState = eState.JustRight;
 
             // Read from the ADC chip the current values of the two pots and the photo cell.
-            int lowPotReadVal = LowPotAdcChannel.ReadValue();
-            int highPotReadVal = HighPotAdcChannel.ReadValue();
             int cdsReadVal = CdsAdcChannel.ReadValue();
 
             // convert the ADC readings to voltages to make them more friendly.
-            float lowPotVoltage = ADCToVoltage(lowPotReadVal);
-            float highPotVoltage = ADCToVoltage(highPotReadVal);
+            float lowPotVoltage = 0.110F;
+            float highPotVoltage = 0.170F;
             float cdsVoltage = ADCToVoltage(cdsReadVal);
 
             // Let us know what was read in.
-            Debug.WriteLine(String.Format("Read values {0}, {1}, {2} ", lowPotReadVal, highPotReadVal, cdsReadVal));
             Debug.WriteLine(String.Format("Voltages {0}, {1}, {2} ", lowPotVoltage, highPotVoltage, cdsVoltage));
 
             // Compute the new state by first checking if the light level is too low
@@ -155,29 +152,36 @@ namespace XmasBlinky
 
         private async Task StartMusic()
         {
-            Timer t = new Timer(PlayMusic, this, 0, 200);
+            PlayMusic();
 
         }
 
-        private async void PlayMusic(object sender)
+        private async void PlayMusic()
         {
-            if(mEngine.Volume<1.00)
+            while (mEngine.Volume <0.90)
             {
-                ledCtrl.StartLights();
-                mEngine.Volume += .1;
-            }
-            else if(mEngine.Volume>0.10)
-            {
-                mEngine.Volume -= .1;
-            }
-            else
-            {
-                mEngine.Volume = 0.01;
-                ((Timer)sender).Dispose();
-                ledCtrl.StopLights();
+                if (!ledCtrl.LightsRunning)
+                {
+                    ledCtrl.StartLights();
+                }
+            
+                mEngine.Volume += 0.10;
+
+                await Task.Delay(200);
             }
 
-            
+            mEngine.Volume = 2.00;
+            await Task.Delay(500);
+
+            while (mEngine.Volume>0.10)
+            {
+                mEngine.Volume -= 0.10;
+                await Task.Delay(200);
+            }
+
+            mEngine.Volume = 0.01;
+            ledCtrl.StopLights();
+             
         }
 
         private async Task CheckForStateChange(eState newState)
