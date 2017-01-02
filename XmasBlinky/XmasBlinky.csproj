@@ -92,6 +92,7 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdcMediaController.cs" />
     <Compile Include="AdcMcp3008ControllerProvider.cs" />
     <Compile Include="AdcMcp3008Provider.cs" />
     <Compile Include="App.xaml.cs">
