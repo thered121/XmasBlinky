@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmasBlinky", "XmasBlinky\Xm
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UniversalMediaEngine", "UniversalMediaEngine\UniversalMediaEngine.vcxproj", "{81D46002-EC95-4423-BF6E-DBE82CCD55CA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fritzing", "Fritzing", "{D053B9AA-5DCA-4D78-9748-9730DFC65736}"
+	ProjectSection(SolutionItems) = preProject
+		XmasBlinky.fzz = XmasBlinky.fzz
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
