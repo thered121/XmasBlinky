@@ -14,8 +14,20 @@ namespace XmasBlinky
         private GpioPinValue rpinValue;
         private GpioPinValue gpinValue;
         private Timer timer;
+        private bool lightsRunning = false;
 
-       
+        public bool LightsRunning
+        {
+            get
+            {
+                return lightsRunning;
+            }
+
+            set
+            {
+                lightsRunning = value;
+            }
+        }
 
         public async void InitializeLEDController()
         {
@@ -32,12 +44,18 @@ namespace XmasBlinky
 
         public void StartLights()
         {
+            this.lightsRunning = true;
             timer = new Timer(Timer_Tick, this, 0, 700);
         }
 
         public void StopLights()
         {
+            this.lightsRunning = false;
             timer.Dispose();
+            rpinValue = GpioPinValue.High;
+            rpin.Write(rpinValue);
+            gpinValue = GpioPinValue.High;
+            gpin.Write(gpinValue);
 
         }
         private async Task InitGPIO()
