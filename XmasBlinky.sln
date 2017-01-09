@@ -4,11 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmasBlinky", "XmasBlinky\XmasBlinky.csproj", "{75696CC0-2DEB-4053-88CF-267A2808B80C}"
-	ProjectSection(ProjectDependencies) = postProject
-		{81D46002-EC95-4423-BF6E-DBE82CCD55CA} = {81D46002-EC95-4423-BF6E-DBE82CCD55CA}
-	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UniversalMediaEngine", "UniversalMediaEngine\UniversalMediaEngine.vcxproj", "{81D46002-EC95-4423-BF6E-DBE82CCD55CA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fritzing", "Fritzing", "{D053B9AA-5DCA-4D78-9748-9730DFC65736}"
 	ProjectSection(SolutionItems) = preProject
@@ -44,18 +39,6 @@ Global
 		{75696CC0-2DEB-4053-88CF-267A2808B80C}.Release|x86.ActiveCfg = Release|x86
 		{75696CC0-2DEB-4053-88CF-267A2808B80C}.Release|x86.Build.0 = Release|x86
 		{75696CC0-2DEB-4053-88CF-267A2808B80C}.Release|x86.Deploy.0 = Release|x86
-		{81D46002-EC95-4423-BF6E-DBE82CCD55CA}.Debug|ARM.ActiveCfg = Debug|ARM
-		{81D46002-EC95-4423-BF6E-DBE82CCD55CA}.Debug|ARM.Build.0 = Debug|ARM
-		{81D46002-EC95-4423-BF6E-DBE82CCD55CA}.Debug|x64.ActiveCfg = Debug|x64
-		{81D46002-EC95-4423-BF6E-DBE82CCD55CA}.Debug|x64.Build.0 = Debug|x64
-		{81D46002-EC95-4423-BF6E-DBE82CCD55CA}.Debug|x86.ActiveCfg = Debug|Win32
-		{81D46002-EC95-4423-BF6E-DBE82CCD55CA}.Debug|x86.Build.0 = Debug|Win32
-		{81D46002-EC95-4423-BF6E-DBE82CCD55CA}.Release|ARM.ActiveCfg = Release|ARM
-		{81D46002-EC95-4423-BF6E-DBE82CCD55CA}.Release|ARM.Build.0 = Release|ARM
-		{81D46002-EC95-4423-BF6E-DBE82CCD55CA}.Release|x64.ActiveCfg = Release|x64
-		{81D46002-EC95-4423-BF6E-DBE82CCD55CA}.Release|x64.Build.0 = Release|x64
-		{81D46002-EC95-4423-BF6E-DBE82CCD55CA}.Release|x86.ActiveCfg = Release|Win32
-		{81D46002-EC95-4423-BF6E-DBE82CCD55CA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
