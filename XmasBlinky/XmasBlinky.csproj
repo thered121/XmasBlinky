@@ -90,7 +90,6 @@
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
     <None Include="project.json" />
-    <None Include="XmasBlinky_TemporaryKey.pfx.snk" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdcMediaController.cs" />
